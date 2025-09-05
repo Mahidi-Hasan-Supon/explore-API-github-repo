@@ -4,10 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API</title>
+    <style>
+        #post-container{
+            max-width: 1180px;
+            margin:50px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+        .post-card{
+            border: 2px solid lavenderblush;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 1px 1px gray;
+            height: 100%;
+            row-gap: 30px;
+        }
+        .post-card p{
+            text-align: justify;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello API</h1>
+    <button onclick="loaddata() ">Load data</button>
+    <button onclick="loadpost() ">Load post</button>
+    <button onclick="postcomment()">Post comment</button>
+    <!-- <button onclick="onClick()">onclick</button> -->
+
+    <div id="post-container">
+       
+    </div>
 
     <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/scripted.js"></script>
+    
 </body>
 </html>
